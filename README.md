@@ -1,0 +1,1 @@
+Cordova app plan

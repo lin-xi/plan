@@ -1,0 +1,13 @@
+﻿<div class="plan-panel" ng-controller="IndexController">
+
+	<div class="edit">
+		<div class="left" ng-click="prev()"><i class="icon-uniF489"></i></div>
+		<div class="center">
+			<p class="date">{{date | date:'yyyy-MM-dd'}}</p>
+			<input id="cnt" placeholder="添加事项" ng-model="plan" ng-blur="onBlur(plan)" type="text"/>
+		</div>
+		<div class="right" ng-click="next()"><i class="icon-uniF488"></i></div>
+	</div>
+
+	<list></list>
+</div>

@@ -1,0 +1,12 @@
+<ul class="plan-list">
+  <li ng-swipe-left="swipeLeft($event)" ng-swipe-right="swipeRight($event)" ng-repeat="item in plans" class="state{{item.status}}" itemId="{{item.id}}">
+  	<div class="container">
+  		<span class="text">{{item.content}}</span>
+  		<span class="command">
+  			<i class="icon-uniF479 complete" ng-click="complete($event)"></i>
+  			<i class="icon-uniF691 undo" ng-click="undo($event)"></i>
+  			<i class="icon-uniF478 remove" ng-click="remove($event)"></i>
+  		</span>
+  	</div>
+  </li>
+</ul>
